@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela um pouco mais complexa</title>
+    <meta name="author" content="C.Hardt"
+</head>
+
+<!-- criar duas lojas, quantos produtos foram produzidos, quantos vendidos e agrupados
+por nome dos produtos. -->
+
+<body>
+
+    <table>
+
+        <caption>Produzidos X vendidos por lojas</caption>
+
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: palevioletred">
+            <col span="2" style="background-color: turquoise">
+
+
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Loja H. Potter</th>
+                <th colspan="2">Loja D. Winchester</th>
+            </tr>
+
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+           
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Camisetas</th>
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>                
+            </tr>
+
+            <tr>
+                <th>Calças</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>                
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
